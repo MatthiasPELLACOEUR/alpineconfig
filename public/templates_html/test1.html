@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Configurateur Alpine</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../templates_html/style.css">
+</head>
+<body>
+<Header>
+    <!--<h1 class="card_choice">Configurateur</h1>-->
+    <img src="../templates_html/img/sources-homepage/logo/logo.png" alt="">
+</Header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>Configurateur modele A110</h2>
+                    <p>Veuillez suivre les étapes...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="divider">Etape 1: Modeles</h3>
+    <hr class="solid">
+    <div>
+                <input
+                        type="radio" name="emotion"
+                        id="legende" class="input-hidden" />
+                <label for="legende">
+                    <img
+                            src="../templates_html/img/configurateur/modele/selection/legende.png"
+                            alt="Alpine legende model" />
+                    <h4>Legende</h4>
+                    <p>58 400€</p>
+                </label>
+
+                <input
+                        type="radio" name="emotion"
+                        id="pure" class="input-hidden" />
+                <label for="pure">
+                    <img
+                            src="../templates_html/img/configurateur/modele/selection/pure.png"
+                            alt="Alpine pure model" />
+                    <h4>Pure</h4>
+                    <p>54 700€</p>
+                </label>
+
+
+
+    </div>
+    <div>
+        <a href="#test1" class="btn" value="blanc">Next</a>
+    </div>
+
+
+<!--part color choice-->
+    <h3 class="divider" id="test1">Etape 2: Couleurs</h3>
+    <hr class="solid">
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <input
+                            type="radio" name="blanc"
+                            id="blanc" class="input-hidden colors" value="blanc"/>
+                    <label for="blanc">
+                        <img
+                                src="../templates_html/img/configurateur/couleurs/selection/blanc.jpg"
+                                alt="couleur blanche" />
+                    </label>
+                    <div class="card-body">
+                        <h5 class="card-title">Blanc Glacier</h5>
+                        <p class="card-text">0€</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <input
+                            type="radio" name="bleu"
+                            id="bleu" class="input-hidden colors" value="bleu"/>
+                    <label for="bleu">
+                        <img
+                                src="../templates_html/img/configurateur/couleurs/selection/bleu.jpg"
+                                alt="couleur bleu" />
+
+                    </label>
+                    <div class="card-body">
+                        <h5 class="card-title">Bleu Alpine</h5>
+                        <p class="card-text">1800€</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <input
+                            type="radio" name="noir"
+                            id="noir" class="input-hidden colors" value="noir" />
+                    <label for="noir">
+                        <img
+                                src="../templates_html/img/configurateur/couleurs/selection/noir.jpg"
+                                alt="noir" />
+                    </label>
+                    <div class="card-body">
+                        <h5 class="card-title">Noir Profond</h5>
+                        <p class="card-text">840€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--part carou-->
+    <div class="blanc color_carou">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_blanc-jante_legende-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_blanc-jante_legende-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_blanc-jante_legende-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_blanc-jante_legende-1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="bleu color_carou">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_bleu-jante_legende-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_bleu-jante_legende-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_bleu-jante_legende-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_bleu-jante_legende-1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="noir color_carou">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_noir-jante_legende-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_noir-jante_legende-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_noir-jante_legende-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../templates_html/img/configurateur/modele/legende/modele_legende-couleur_noir-jante_legende-1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</main>
+
+<script>
+    $(document).ready(function(){
+        $("a").click(function () {
+            var val = $(this).attr("value");
+            var div= $("."+ val);
+            div.not(div).hide();
+            $(div).show();
+        });
+    });
+
+    $('#blanc').click(function() {
+        $('#noir').prop('checked', false)
+        $('#bleu').prop('checked', false)
+    })
+    $('#noir').click(function() {
+        $('#blanc').prop('checked', false)
+        $('#bleu').prop('checked', false)
+    })
+    $('#bleu').click(function() {
+        $('#noir').prop('checked', false)
+        $('#blanc').prop('checked', false)
+    })
+
+    $(document).ready(function(){
+        $('.colors[type="radio"]').click(function(){
+            var val = $(this).attr("value");
+            var target = $("." + val);
+            $(".msg").not(target).hide();
+            $(target).show();
+        });
+    });
+</script>
+</body>
+</html>

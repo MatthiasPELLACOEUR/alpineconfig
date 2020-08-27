@@ -1,0 +1,273 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    /* height: 100%; */
+    margin: 0;
+    /* padding: 10px; */
+}
+
+.img_header {
+    width: 100%;
+    height: 1420px;
+    margin-top: -150px;
+}
+
+nav{
+    background-color: #0A57D7;
+    margin: 0;
+    height: 50px;
+}
+
+.txt_header{
+    position: relative;
+    top: -800px;
+    background: rgba(40,44,52, 0.5);
+    border-radius: 10px;
+
+}
+
+h2.txt{
+    padding-top: 50px;
+}
+p.txt{
+     padding-top: 25px;
+ }
+
+.txt{
+    height: 100px;
+    /*opacity: 1.5;*/
+    color: white;
+}
+
+h2, p{
+    text-align: center;
+}
+
+.buttons {
+    position: relative;
+    top: 25x;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+.btn:hover {
+    text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+    color: #FFF;
+    font-size: 25px;
+    border: 4px solid #0A57D7;
+    box-shadow:0px 0px 0px 1px #0A57D7 inset;
+    background-color: #0A57D7;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    top: -770px;
+}
+.effect01:hover {
+    border: 4px solid #0A57D7;
+    background-color: #FFF;
+    box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01 span {
+    transition: all 0.2s ease-out;
+    z-index: 2;
+}
+.effect01:hover span{
+    letter-spacing: 0.13em;
+    color: #0A57D7;
+    font-size: 25px;
+}
+
+/*highlight*/
+.effect01:after {
+    background: #FFF;
+    border: 0px solid #000;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .8;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    width: 50px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+    z-index: 1;
+}
+.effect01:hover:after {
+    background: #FFF;
+    border: 20px solid #000;
+    opacity: 0;
+    left: 120%;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+/*fin css header*/
+
+h1.card_choice{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+    border: 4px solid #fff;
+    /*box-shadow: 0 0 3px 3px red;*/
+    background-color: gray;
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img {
+    /*border: 1px dashed #444;*/
+    width: 600px;
+    height: auto;
+    transition: 500ms all;
+    border-radius: 10px;
+    margin-left: 6%;
+    text-align: center;
+}
+
+input[type=radio] + label {
+    text-align: center;
+}
+
+
+/*part section colors choice*/
+
+section{
+    border: 1px solid gray;
+
+}
+
+
+.colors[type='radio']:checked + label>img {
+    border: 2px solid red;
+    /*box-shadow: 0 0 3px 3px red;*/
+    background-color: gray;
+}
+
+.colors[type='radio'] + label>img {
+    /*border: 1px dashed #444;*/
+    margin-top: 10px;
+    width: 200px;
+    height: auto;
+    transition: 500ms all;
+    border-radius: 10px;
+    margin: 15%;
+}
+
+.card{
+    text-align: center;
+    border: none;
+    margin-left: 25%;
+}
+
+
+.color_carou{
+    margin-top: 25px;
+    padding: 25px;
+    display: none;
+    color: #fff;
+}
+
+
+.color_carou2{
+    margin-top: 25px;
+    padding: 25px;
+    display: none;
+    color: #fff;
+}
+
+/*divider line css*/
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+h3.divider{
+    text-align: center;
+}
+
+/*btn next part*/
+
+a.btn_next{
+    float: right;
+    background-color: #0A57D7;
+    width: 150px;
+    height: 45px;
+    transform: skew(-20deg);
+    color: white;
+    line-height: 30px;
+}
+
+
+  .test345,
+  .sidebar {
+    /* border: 2px solid black; */
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  .test345 {
+      width: 60%;
+      height: 150vh;
+  }
+
+  .sidebar {
+      border: 1px solid black;
+      height: 100%;
+      position: sticky;
+      top: 20px;
+  }
+
+  aside {
+      padding-top: 25px; 
+  }
+
+  .card {
+      margin-left: 0px;
+  }
+
+  .img-home {
+      position: relative;
+      padding: 10px;
+  }
+
+  .color-card {
+      width: 18rem;
+  }
+
+  .footer {
+      position: sticky;
+      left: -10px;
+      bottom: 0;
+      width: 50%;
+      background-color: white;
+      color: #0A57D7;
+      height: 61px;
+      padding: 20px;
+      font-weight: bold;
+      transform: skew(-20deg);
+
+  }
